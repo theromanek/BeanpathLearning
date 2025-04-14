@@ -1,0 +1,27 @@
+{% load static tailwind_tags %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Document</title>
+    {% tailwind_css %}
+</head>
+
+<body class="bg-[#F6F4F0]">
+    <header class="h-20 bg-white flex justify-between items-center p-4">
+        <div class="">
+            <h3 class="text-[#7D8066]">BeanPath Learn</h3>
+        </div>
+        <div><img class="h-5 w-5" src="{% static 'menu.png' %}" alt=""></div>
+
+        </div>
+    </header>
+    {% block content %}
+    {% endblock %}
+</body>
+
+</html>
